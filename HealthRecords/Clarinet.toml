@@ -1,0 +1,15 @@
+
+[project]
+name = "HealthRecords"
+authors = []
+telemetry = true
+[repl.analysis]
+passes = ["check_checker"]
+[repl.analysis.check_checker]
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[contracts.HealthRecords]
+path = "contracts/HealthRecords.clar"
+depends_on = []
